@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A1628">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🚛"
+                android:textSize="28sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TruckTrack"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Trip ID card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#151F2E"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENTER TRIP ID"
+                android:textSize="11sp"
+                android:textColor="#8899AA"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/et_trip_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Trip ID from dispatcher"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#445566"
+                android:background="@drawable/input_bg"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/btn_load_trip"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Load Trip"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#1A6FBF"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Trip info card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#151F2E"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status: —"
+                android:textColor="#4FC3F7"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:letterSpacing="0.08"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_route"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No trip loaded"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:id="@+id/tv_material"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="—"
+                android:textColor="#8899AA"
+                android:textSize="13sp"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:id="@+id/tv_driver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="—"
+                android:textColor="#8899AA"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <!-- GPS status -->
+        <TextView
+            android:id="@+id/tv_gps_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚫ GPS tracking OFF"
+            android:textColor="#8899AA"
+            android:textSize="12sp"
+            android:background="#151F2E"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Action button -->
+        <Button
+            android:id="@+id/btn_action"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Load a trip first"
+            android:enabled="false"
+            android:backgroundTint="#27AE60"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Instructions -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚠️ Keep this app open while driving. GPS tracking runs in background — do not force-close."
+            android:textColor="#445566"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

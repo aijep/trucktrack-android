@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.TruckTrack" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/dark_bg</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="android:windowBackground">@color/dark_bg</item>
+    </style>
+</resources>
